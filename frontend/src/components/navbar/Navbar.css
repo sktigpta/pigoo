@@ -1,0 +1,54 @@
+/* Navbar.css */
+.navbar {
+    top: 0;
+    width: 100%; /* Use full width */
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: rgba(0, 0, 0, 0.852); /* Use a semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur to the background */
+    padding: .5em 2em;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* Transition for smooth background change */
+    z-index: 1000; /* Ensure navbar is above other content */
+  }
+
+  .logo img{
+    max-height:3em;
+  }
+  
+  .navbar ul {
+    margin-right: 3em;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar li {
+    cursor: pointer;
+  }
+  
+  .navbar.hidden {
+    transform: translateY(-100%);
+  }
+  
+  .navbar.visible {
+    transform: translateY(0);
+  }
+  
+  /* Loading Screen */
+  .loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .loading-screen h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
